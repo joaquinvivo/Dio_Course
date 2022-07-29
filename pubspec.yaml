@@ -10,6 +10,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   http: ^0.13.4
   dio: ^4.0.6
+  shared_preferences: ^2.0.15
+  cookie_jar: ^3.0.1
+  path_provider: ^2.0.11
+  dio_cookie_manager: ^2.0.0
+  image_picker: ^0.8.5+3
 
 dev_dependencies:
   flutter_test:

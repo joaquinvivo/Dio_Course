@@ -1,8 +1,11 @@
+import 'package:dio_playground/dio/dio_token_manager.dart';
+import 'package:dio_playground/dio/login_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'dio/dio_example.dart';
-
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  // CookieManager.instance.initCookie();
+  TokenManager.instance.initToken();
   runApp(const MyApp());
 }
 
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: const HttpClientExample(),
       // home: const HttpExample(),
-      home: const DioExample(),
+      home: const LoginScreen(),
     );
   }
 }
